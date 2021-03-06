@@ -1,0 +1,16 @@
+.vscode-test/
+out/
+test-fixtures/
+node_modules/
+
+# react-native
+android/
+ios
+
+# external
+purge-tailwindcss.js
+tailwind.config.js
+
+src/@fuse/
+src/@lodash/
+src/styles/tailwind.css

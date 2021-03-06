@@ -1,0 +1,45 @@
+{
+	"parser": "babel-eslint",
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"airbnb",
+		"airbnb/hooks",
+		"prettier",
+		"prettier/react",
+		"plugin:prettier/recommended",
+		"plugin:jsx-a11y/recommended",
+		"prettier/babel"
+	],
+	"rules": {
+		"react/jsx-filename-extension": 0,
+		"jsx-a11y/anchor-is-valid": [
+			"error",
+			{
+				"components": ["Link"],
+				"specialLink": ["to"]
+			}
+		],
+		"react/destructuring-assignment": [
+			"error",
+			"always",
+			{
+				"ignoreClassFields": true
+			}
+		],
+		"prettier/prettier": "error",
+		"react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+		"react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
+		"no-console": 1
+	},
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"plugins": ["react", "react-hooks", "prettier", "jsx-a11y", "babel"],
+	"env": {
+		"browser": true
+	}
+}

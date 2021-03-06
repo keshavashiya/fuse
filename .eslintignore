@@ -1,0 +1,34 @@
+# dependencies
+node_modules/
+.yarn/
+
+# production
+build/
+dist/
+public/
+
+# webpack
+webpack.config.js
+webpack.common.js
+webpack.prod.js
+*.test.js
+
+# ide
+.vscode/
+
+# react-native
+android/
+ios
+
+# external
+purge-tailwindcss.js
+tailwind.config.js
+
+src/@fuse/
+src/@lodash/
+
+# external docs
+src/app/main/documentation/material-ui-components/components/*
+src/app/main/documentation/material-ui-components/pages/*
+src/app/main/documentation/material-ui-components/build.js
+src/app/main/documentation/third-party-components/*/examples/*
